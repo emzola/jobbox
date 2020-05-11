@@ -1,0 +1,178 @@
+:root {
+  --primary: #334D68;
+  --secondary: #87EAF2;
+  --text-primary: #242424;
+}
+
+html {
+  background-color: #F0F4F8;
+  color: #242424;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 62.5%;
+  font-weight: normal;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+/* General Styles */
+
+.layout {
+  width: 110rem;
+  margin: 0 auto;
+}
+
+.buttonColored {
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 2px;
+  color: var(--primary);
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-transform: none;
+  text-align: center;
+}
+
+.buttonColored:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER SECTION STYLES */
+
+.header {
+  background-color: var(--primary);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  color: #fff;
+  height: 70vh;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.headerFlexed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigationItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigationItems li:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.searchIcon {
+  cursor: pointer;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+/* Hero Styles */
+
+.heroContent, .heroForm {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroContent {
+  width: 70rem;
+  padding: 3rem 0;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.heroForm {
+  background-color: #fff;
+  border-radius: 5px;
+  color: var(--text-primary);
+  width: 60rem;
+  height: auto;
+  padding: 2rem;
+}
+
+.formGroupRadio, .formGroupText {
+  display: flex;
+  align-items: center;
+}
+
+.formGroupRadio {
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.formGroupRadio div:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.formGroupText {
+  justify-content: space-between;
+}
+
+.formGroupText input[type="text"] {
+  font-family: inherit;
+  border: 0.5px solid #D9E2EC;
+  border-radius: 5px;
+  background-color: #D9E2EC;
+  padding: 1rem;
+  outline: none;
+  width: 22rem;
+}
+
+.heroFormButton {
+  background-color: #38BEC9;
+  border: none;
+  border-radius: 2px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-transform: none;
+  text-align: center;
+}
