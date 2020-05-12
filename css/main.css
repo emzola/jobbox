@@ -54,24 +54,65 @@ h5 {
 
 /* General Styles */
 
-.layout {
-  width: 110rem;
+.layout, .jobListLayout {
   margin: 0 auto;
 }
 
-.buttonColored {
-  background-color: var(--secondary);
-  border: none;
-  border-radius: 2px;
-  color: var(--primary);
-  font-size: 1.5rem;
-  padding: 1rem;
-  text-transform: none;
-  text-align: center;
+.layout {
+  width: 110rem;
 }
 
-.buttonColored:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+.jobListLayout {
+  width: 70rem;
+}
+
+.buttonLight, .searchJobButton, .buttonDark {
+  border: none;
+  border-radius: 2px;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  text-transform: none;
+}
+
+.buttonLight {
+  background-color: var(--secondary);
+}
+
+.searchJobButton {
+  background-color: #38BEC9;
+}
+
+.buttonDark {
+  background-color: var(--text-primary);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+}
+
+.marginLarge {
+  margin: 7rem 0;
+}
+
+.marginButtomLarge {
+  margin-bottom: 7rem;
+}
+
+.marginBottom {
+  margin-bottom: 2rem;
+}
+
+.paddingLarge {
+  padding: 7rem 0;
+}
+
+.paddingBottomLarge {
+  padding-bottom: 7rem;
 }
 
 /* HEADER SECTION STYLES */
@@ -81,9 +122,8 @@ h5 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
   background-position: center;
   background-size: cover;
-  position: fixed;
   color: #fff;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   padding: 2rem 0;
 }
@@ -165,14 +205,73 @@ h5 {
   width: 22rem;
 }
 
-.heroFormButton {
-  background-color: #38BEC9;
-  border: none;
-  border-radius: 2px;
-  color: var(--text-primary);
-  cursor: pointer;
-  font-size: 1.5rem;
-  padding: 1rem;
-  text-transform: none;
+/* CLIENTS SECTION STYLES */
+
+.clientsTitle {
+  color: #808185;
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.clientsLogos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+.clientLogo {
+  width: 10rem;
+}
+
+/* JOBS LISTS SECTION STYLES */
+
+.jobListHeading {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.jobListItem {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 3rem;
+}
+
+.jobListLogo {
+  width: 8rem;
+  height: auto;
+  border-radius: px;
+  margin-right: 3rem;
+}
+
+.companyLogo {
+  width: 100%;
+}
+
+.jobListText {
+  flex: 2;
+}
+
+.jobListCompany {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.jobListTitle {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.jobListTime {
+  float: right;
+}
+
+.loadMore {
+  text-align: center;
+  margin-top: 3rem;
 }
