@@ -74,7 +74,7 @@ h5 {
   display: inline-block;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 1rem;
+  padding: 1rem 2rem;
   text-align: center;
   text-transform: none;
 }
@@ -92,7 +92,6 @@ h5 {
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
   color: #fff;
   font-size: 1.6rem;
-  padding: 1rem 2rem;
 }
 
 .marginLarge {
@@ -109,6 +108,10 @@ h5 {
 
 .paddingLarge {
   padding: 7rem 0;
+}
+
+.paddingMedium {
+  padding: 4rem 0;
 }
 
 .paddingBottomLarge {
@@ -274,4 +277,52 @@ h5 {
 .loadMore {
   text-align: center;
   margin-top: 3rem;
+}
+
+/* FOOTER SECTION STYLES */
+
+.footer {
+  background-color: var(--text-primary);
+  color: #fff;
+  padding-top: 5rem;
+}
+
+.footerWidgets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+.jobsNum {
+  font-size: 4rem;
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.rightWidgetText {
+  margin-bottom: 1.5rem;
+}
+
+.copyright {
+  background-color: #4D5154;
+  height: 5rem;
+  padding: 1rem 0;
+  vertical-align: middle;
+}
+
+.copyrightContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  font-size: 2rem;
+}
+
+.social a:not(:last-child) {
+  margin-right: 0.5rem;
 }
