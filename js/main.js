@@ -2,7 +2,7 @@ window.onscroll = function () {
   headerBarScroll()
 }
 
-const header = document.getElementById('headerBarSticky')
+const header = document.getElementById('headerBar')
 
 const sticky = header.offsetTop
 

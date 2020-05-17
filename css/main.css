@@ -1,3 +1,5 @@
+/* BASE */
+
 :root {
   --bg-color: #F0F4F8;
   --primary: #334D68;
@@ -36,37 +38,48 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3.6rem;
+  margin: 1.7rem 0;
 }
 
 h2 {
   font-size: 3rem;
+  margin: 1.7rem 0;
 }
 
 h3 {
   font-size: 2.4rem;
+  margin: 1.7rem 0;
 }
 
 h4 {
   font-size: 2rem;
+  margin: 1.7rem 0;
 }
 
 h5 {
   font-size: 1.8rem;
+  margin: 1.2rem 0;
 }
 
-/* General Styles */
+p {
+  margin-bottom: 1rem;
+}
 
-.layout, .jobListLayout {
+/* LAYOUT */
+
+.layoutOne, .layoutTwo {
   margin: 0 auto;
 }
 
-.layout {
+.layoutOne {
   width: 110rem;
 }
 
-.jobListLayout {
+.layoutTwo {
   width: 70rem;
 }
+
+/* UTILITIES */
 
 .buttonLight, .searchJobButton, .buttonDark {
   border: none;
@@ -120,19 +133,27 @@ h5 {
   padding-bottom: 7rem;
 }
 
-/* HEADER SECTION STYLES */
+/* HEADER */
 
-/* Navigation Items */
+/* Header Bar */
 
-.header {
+.headerOne, .headerTwo {
   background-color: var(--text-primary);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
+  color: #fff;
   background-position: center;
   background-size: cover;
-  color: #fff;
-  height: 80vh;
-  width: 100%;
   padding: 2rem 0;
+  width: 100%;
+}
+
+.headerOne {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.jpg');
+  height: 80vh;
+}
+
+.headerTwo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/header-bg.jpg');
+  height: 50vh;
 }
 
 .headerBar {
@@ -149,6 +170,8 @@ h5 {
 .headerBarScroll {
   background-color: var(--text-primary);
 }
+
+/* Navigation Items */
 
 .navigationItems {
   display: flex;
@@ -200,25 +223,77 @@ h5 {
   margin-right: 3rem;
 }
 
-/* Hero Styles */
+/* FOOTER */
 
-.heroContent, .heroForm {
+.footer {
+  background-color: var(--text-primary);
+  color: #fff;
+  max-height: 25rem;
+  padding-top: 5rem;
+}
+
+.footerWidgets {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+.jobsNum {
+  font-size: 4rem;
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.rightWidgetText {
+  margin-bottom: 1.5rem;
+}
+
+.copyright {
+  background-color: #4D5154;
+  height: 5rem;
+  padding: 1rem 0;
+  vertical-align: middle;
+}
+
+.copyrightContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  font-size: 2rem;
+}
+
+.social a:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+/* HOME PAGE */
+
+/* Hero-like Header */
+
+.headerContent, .headerForm {
   margin: 0 auto;
   text-align: center;
 }
 
-.heroContent {
+.headerContent {
   width: 70rem;
-  padding: 3rem 0;
+  padding: 4rem 0;
   margin-top: 6rem;
 }
 
-.heroTitle {
+.headerTitle {
   font-size: 4rem;
+  margin-top: 0;
   margin-bottom: 2rem;
 }
 
-.heroForm {
+.headerForm {
   background-color: #fff;
   border-radius: 5px;
   color: var(--text-primary);
@@ -307,6 +382,10 @@ h5 {
   flex: 2;
 }
 
+.jobListText p {
+  margin: 0;
+}
+
 .jobListCompany {
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -314,6 +393,7 @@ h5 {
 
 .jobListTitle {
   font-size: 2rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -324,53 +404,4 @@ h5 {
 .loadMore {
   text-align: center;
   margin-top: 3rem;
-}
-
-/* FOOTER SECTION STYLES */
-
-.footer {
-  background-color: var(--text-primary);
-  color: #fff;
-  max-height: 25rem;
-  padding-top: 5rem;
-}
-
-.footerWidgets {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 5rem;
-}
-
-.jobsNum {
-  font-size: 4rem;
-  font-weight: bold;
-  display: block;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.rightWidgetText {
-  margin-bottom: 1.5rem;
-}
-
-.copyright {
-  background-color: #4D5154;
-  height: 5rem;
-  padding: 1rem 0;
-  vertical-align: middle;
-}
-
-.copyrightContent {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.social {
-  font-size: 2rem;
-}
-
-.social a:not(:last-child) {
-  margin-right: 0.5rem;
 }
