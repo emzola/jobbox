@@ -487,3 +487,62 @@ p {
 .rightContentBoxText {
   margin-bottom: 3rem;
 }
+
+/* LOGIN */
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loginLeft, .loginRight {
+  width: 100%;
+  height: 100vh;
+}
+
+.loginLeft {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/login-bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.loginRight {
+  background-color: #fff;
+  position: relative;
+}
+
+.loginForm {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+}
+
+.loginFormGroup {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.loginForm input {
+  width: 100%;
+}
+
+.loginFormGroup input[type=text], .loginFormGroup input[type=email], .loginFormGroup input[type=password] {
+  font-family: inherit;
+  border: 0.5px solid #D9E2EC;
+  border-radius: 5px;
+  background-color: #D9E2EC;
+  padding: 1rem;
+  outline: none;
+}
+
+.loginFormGroup input[type=submit] {
+  margin-top: 1rem;
+}
+
+.loginFormGroup a {
+  font-weight: bold;
+}
